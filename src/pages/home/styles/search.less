@@ -1,0 +1,71 @@
+.container {
+    top: 0;
+    width: 100%;
+    padding: .3rem;
+    justify-content: space-around;
+    z-index: 1;
+    .personal-info {
+        font-size: .35rem;
+        flex: 0;
+        min-width: 2.5rem;
+        .icon {
+            width: 1rem;
+            height: 1rem;
+        }
+        .detail {
+            margin-left: .2rem;
+            & div{
+                text-align: center;
+            }
+            & div:first-of-type {
+                margin-bottom: .13rem;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 1.5rem;
+            }
+            & div:nth-of-type(2) {
+                font-size: .3rem;
+                color: #ddd;
+            }
+        }
+    }
+    .input{
+        flex: 1;
+        :global{
+            .am-list-item{
+                background-color: #fff;
+            }
+            .am-list-item.am-input-item{
+                height: .8rem;
+                line-height: .8rem;
+                padding-left: .15rem;
+            }
+            .am-list-item.am-input-item:before{
+                content:'\e600';
+                font-family: iconfont;
+                font-size: .4rem;
+                color: #ddd;
+                margin-right: .1rem;
+                margin-top: -.1rem;
+            }
+            .am-list-item .am-input-control input{
+                font-size: .33rem;
+                padding-top: .15rem;
+                line-height: 0;
+            }
+        }
+    }
+    .help{
+        background-color: red;
+        flex: 0;
+        min-width: .63rem;
+        margin-left: .3rem;
+        &:before {
+            content: '\e60e';
+            font-family: iconfont;
+            position: absolute;
+            font-size: .6rem;
+            top: .45rem;
+        }
+    }
+}

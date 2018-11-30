@@ -1,0 +1,43 @@
+@import '~@/colors';
+
+.header{
+    padding: .3rem;
+    .con{
+        box-shadow: 0 0 8px #4c4c4c;
+        background-color: @section;
+        font-size: .35rem;
+        border-radius: 8px;
+        .top{
+            padding: .4rem;
+            > div{
+                &:nth-of-type(1){
+                    color: #febb02;
+                    font-size: .8rem;
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+        .nav{
+            background-color: @grey;
+            height: 1rem;
+            > div{
+                text-align: center;
+                &:before{
+                    font-family: iconfont;
+                    font-size: .5rem;
+                    margin-right: .16rem;
+                    display: inline-block;
+                }
+                &:nth-of-type(1):before{
+                    content:'\e660';
+                }
+                &:nth-of-type(2):before{
+                    content:'\e94b';
+                }
+                &:nth-of-type(3):before{
+                    content:'\e60d';
+                }
+            }
+        }
+    }
+}

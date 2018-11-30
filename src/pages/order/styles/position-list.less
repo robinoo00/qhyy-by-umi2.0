@@ -1,0 +1,91 @@
+@import '~@/colors';
+
+.wrap{
+    padding-top: .01rem;
+}
+.item{
+    background-color: @section;
+    padding: .07rem .1rem;
+    margin-top: .05rem;
+}
+.line1{
+    padding: .2rem;
+    &:after{
+        content:'';
+        clear: both;
+        display: block;
+    }
+    .info{
+        float: left;
+        > div{
+            &:nth-of-type(1){
+                .name{
+                    font-weight: bold;
+                    font-size: .47rem;
+                }
+                .money{
+                    margin-left: .05rem;
+                    font-size: .43rem;
+                }
+                .tip{
+                    width: .4rem;
+                    height: .4rem;
+                    line-height: .4rem;
+                    border-radius: 50%;
+                    margin: .06rem;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+            &:nth-of-type(2){
+                .time{
+                    margin: .3rem 0 .2rem;
+                    color: #ddd;
+                    font-size: .3rem;
+                }
+            }
+        }
+    }
+    .action{
+        float: right;
+        margin-top: .27rem;
+        span{
+            border-radius: 20px;
+            border:1px solid #efb231;
+            color: #efb231;
+            padding: .08rem .4rem;
+            margin-left: .1rem;
+            margin-right: .3rem;
+            font-size: .35rem;
+        }
+    }
+}
+
+.price{
+    padding: .06rem 0;
+    > div{
+        position: relative;
+        margin-left: 0 !important;
+        &:not(:last-of-type):after{
+            content: '';
+            position: absolute;
+            right: 0;
+            height: 200%;
+            width: 1px;
+            top: -50%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            background-color: #fff;
+        }
+        > div{
+            text-align: center;
+            font-size: .35rem;
+            &:nth-of-type(2){
+                color: #b4b4b4;
+                line-height: .23rem;
+                font-size: .32rem;
+                margin-top: .3rem;
+            }
+        }
+    }
+}

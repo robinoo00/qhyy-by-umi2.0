@@ -1,0 +1,41 @@
+@height:.7rem;
+.num-choose{
+    border-radius: 3px;
+    line-height: @height;
+    padding: 2px;
+    div[data-status="on"]{
+        background-color: #ef9d2e;
+    }
+    div[data-status="off"]{
+        border:1px solid #aaa;
+    }
+    > div{
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: .35rem;
+        &:nth-of-type(1),&:nth-of-type(3){
+            flex: 0;
+            min-width: @height;
+            height: @height;
+        }
+        .del-item,.add-item{
+            border-radius: 5px;
+            font-size: .4rem;
+        }
+        .del-item,.num-input,.add-item{
+            text-align: center;
+        }
+        .num-input{
+            padding: 0;
+            width: 100%;
+            input{
+                background: none;
+                border: none;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

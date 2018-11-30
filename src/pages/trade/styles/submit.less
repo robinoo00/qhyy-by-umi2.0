@@ -1,0 +1,44 @@
+@import "~@/colors";
+
+.wrap{
+    position: fixed;
+    bottom: 0;
+    border-radius: 12px;
+    line-height: 1.2rem;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(90deg, @up 50%, @down 50%);
+    > div{
+        text-align: center;
+        margin-left: 0 !important;
+        font-size: .42rem;
+    }
+    .buy{
+        background-color: @up;
+        &:before{
+            content:'\e6e1';
+            font-family: iconfont;
+            margin-right: .2rem;
+        }
+    }
+    .ping{
+        flex:.7;
+        border-radius: 40px;
+        background-color: #fff;
+        color:#000;
+    }
+    .sell{
+        background-color: @down;
+        &:after{
+            content:'\e6e1';
+            font-family: iconfont;
+            display: inline-block;
+            transform:rotate(180deg);
+            margin-left: .2rem;
+        }
+    }
+}

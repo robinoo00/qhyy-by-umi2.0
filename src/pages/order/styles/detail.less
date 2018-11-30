@@ -1,0 +1,71 @@
+@import '~@/colors';
+
+.list{
+    .name{
+        > div{
+            &:nth-of-type(1){
+                flex: 2.1;
+            }
+        }
+    }
+    .section{
+        > div{
+            &:nth-of-type(1){
+                border-right: 1px solid @grey;
+                flex: 2;
+            }
+            .unit{
+                text-align: right;
+                padding-right: .15rem;
+            }
+        }
+    }
+    .earn{
+        > div {
+            &:nth-of-type(2){
+                text-align: right;
+                padding-right: .15rem;
+            }
+        }
+    }
+}
+.tips{
+    padding: .2rem;
+    > div{
+        &:nth-of-type(1){
+            margin-bottom: .15rem;
+        }
+    }
+}
+.submit{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .2rem .15rem;
+    > div{
+        a{
+            height: 1rem;
+            line-height: 1rem;
+            color: #fff;
+        }
+        &:nth-of-type(1){
+            margin-left: 0 !important;
+            > a{
+                background-color: @orange;
+            }
+        }
+        &:nth-of-type(2){
+            margin-left: .15rem;
+            > a{
+                background-color: @up;
+            }
+        }
+        &:nth-of-type(3){
+            margin-left: .15rem;
+            > a{
+                background-color: @down;
+            }
+        }
+    }
+}
+
